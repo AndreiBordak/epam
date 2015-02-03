@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="97703" started-at="2014-12-15T13:05:43Z" finished-at="2014-12-15T13:07:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="97703" started-at="2014-12-15T13:05:43Z" finished-at="2014-12-15T13:07:20Z">
+      <class name="com.epam.framework.test.CheckingSignatureTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.epam.framework.test.CheckingSignatureTest@1888ff2c]" name="setUp" is-config="true" duration-ms="8001" started-at="2014-12-15T15:05:43Z" description="Initializing browser" finished-at="2014-12-15T15:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.epam.framework.test.CheckingSignatureTest@1888ff2c]" name="beforeClass" is-config="true" duration-ms="10535" started-at="2014-12-15T15:05:51Z" description="Login" finished-at="2014-12-15T15:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="newMessageHasSignature()[pri:0, instance:com.epam.framework.test.CheckingSignatureTest@1888ff2c]" name="newMessageHasSignature" duration-ms="44135" started-at="2014-12-15T15:06:01Z" description="Cheking signature" finished-at="2014-12-15T15:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newMessageHasSignature -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.epam.framework.test.CheckingSignatureTest@1888ff2c]" name="afterClass" is-config="true" duration-ms="34580" started-at="2014-12-15T15:06:45Z" description="Delete created signature" finished-at="2014-12-15T15:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="stopBrowser()[pri:0, instance:com.epam.framework.test.CheckingSignatureTest@1888ff2c]" name="stopBrowser" is-config="true" duration-ms="432" started-at="2014-12-15T15:07:20Z" description="Closing browser" finished-at="2014-12-15T15:07:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopBrowser -->
+      </class> <!-- com.epam.framework.test.CheckingSignatureTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite1 -->
+</testng-results>

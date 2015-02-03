@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.epam.framework.test.CheckingSignatureTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="beforeClass"/>
+          <include name="newMessageHasSignature"/>
+          <include name="stopBrowser"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.epam.framework.test.CheckingSignatureTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
