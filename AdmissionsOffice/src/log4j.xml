@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="error" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="C:\\error.log"/>
+        <param name="MaxFileSize" value="100KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p %c:%l = %m%n"/>
+        </layout>
+    </appender>
+    <appender name="listener" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="C:\\listener.log"/>
+        <param name="MaxFileSize" value="100KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p %c:%l = %m%n"/>
+        </layout>
+    </appender>
+    <appender name="fatal" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="C:\\fatal.log"/>
+        <param name="Threshold" value="ERROR"/>
+        <param name="MaxFileSize" value="100KB"/>
+        <param name="MaxBackupIndex" value="10"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d %5p %c:%l = %m%n"/>
+        </layout>
+    </appender>
+
+    <category name="fatal">
+        <priority value="FATAL"/>
+        <appender-ref ref="fatal"/>
+    </category>
+
+    <root>
+        <priority value="error"/>
+        <appender-ref ref="error"/>
+    </root>
+</log4j:configuration>
